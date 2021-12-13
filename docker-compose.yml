@@ -1,0 +1,21 @@
+services:
+  web:
+    build:
+      context: ./web
+      args:
+        - MQTT=ws://127.0.0.1:8000/mqtt # external address, from web
+    ports: 
+      - 3000:80
+      
+  iot1:
+    build:
+      context: ./iots
+    environment:
+      - MQTT=mqtt://hivemq
+
+  hivemq:
+    image: hivemq/hivemq4
+    ports:
+      - 1883:1883 # mqtt
+      - 8000:8000 # mqtt over websocket
+      - 8080:8080 # web admin, user=admin pass=hivemq 

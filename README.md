@@ -7,6 +7,8 @@ iot data visualization mqtt example | 基于 mqtt 的 iot 数据展示示例
 
 ## try it out | 运行
 
+![screenshot](./screenshot.gif)
+
 ```
 docker-compose up
 ```

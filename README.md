@@ -22,3 +22,7 @@ https://www.hivemq.com/solutions/technology/kubernetes/
 
 cross language/platform
 https://www.hivemq.com/mqtt-client-library-encyclopedia/
+
+## system design
+
+![flowchart](./flowchart.svg)

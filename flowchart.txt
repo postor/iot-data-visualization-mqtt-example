@@ -1,0 +1,13 @@
+graph TD
+    A[Iot temperature] --> D(hivemq server)
+    B[Iot gps] --> D
+    C[Iot other] --> D
+    D --> E[record worker]
+    D --> F[web client]
+    D --> G[mobile app client]
+    D --> K[other client]
+    E --> H[database + cache]
+    H --> I[history service]
+    I --> F
+    I --> G
+    I --> K

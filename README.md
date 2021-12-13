@@ -14,3 +14,11 @@ docker-compose up
 ```
 
 open | 打开 http://localhost:3000
+
+## why mqtt
+
+easy scaling
+https://www.hivemq.com/solutions/technology/kubernetes/
+
+cross language/platform
+https://www.hivemq.com/mqtt-client-library-encyclopedia/
